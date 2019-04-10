@@ -155,7 +155,7 @@ h2 {
 }
 .navigation_header {
   justify-content: space-around;
-  height: 60px;
+  height: 75px;
 }
 .navigation_header nav {
   width: 100%;
@@ -168,36 +168,34 @@ h2 {
   text-decoration: none;
 }
 .navigation_header nav a:hover {
-  color: #BAAC93;
+  color: white;
 }
 .navigation_header nav a:first-child {
   margin-left: 20;
 }
 .title_header {
-  height: 250px;
-  padding-bottom: 20px;
+  height: 300px;
+  border: solid black 1px;
 }
 .title_header img {
   width: 20%;
   margin-left: 4%;
 }
 .title_header div {
-  width: 31%;
+  width: 75%;
   flex-direction: column;
   text-align: center;
-  background-color: #BAAC93;
-  margin-left: 21%;
-  padding: 10px 0 10px 0;
+  background-color: white;
 }
 .about {
-  height: 110px;
+  height: 225px;
   background-color: #BAAC93;
   display: flex;
   justify-content: space-around;
-  align-items: center;
   margin: auto;
-  padding: 2%;
-  text-align: justify;
+  padding: 5% 0 5% 0;
+  border: solid black 1px;
+  /* text-align: center; */
 }
 .about p {
   font-size: 14px;
@@ -207,40 +205,25 @@ h2 {
 .main_content {
   display: flex;
   flex-wrap: wrap;
+  /* width: 100%; */
+}
+.contact {
   height: 600px;
-}
-.left_pane {
+  border: solid black 1px;
   font-size: 14px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 25%;
-  padding: 2%;
-  border-right: solid #BAAC93 3px;
-  margin: 2% 0 2% 0;
+  /* display: flex; */
+  /* flex-direction: column; */
+  width: 20%;
+  padding: 5%;
 }
-.main_content .left_pane .contact {
-
-} 
-.main_content .left_pane .contact .icons {
-  display: flex;
-}
-.main_content .left_pane .contact .icons a {
-  color:#6B6A7E;
-  text-decoration: none;
-}
-.main_content .left_pane .contact .icons a:hover {
-  color:#BAAC93;
-  text-decoration: none;
-}
-
-.right_pane {
+.experience {
+  height: 600px;
+  border: solid black 1px;
   font-size: 14px;
-  justify-content: space-around;
-  display: flex;
-  flex-direction: column;
-  width: 75%;
-  padding: 2%;
+  /* display: flex; */
+  /* flex-direction: column; */
+  width: 80%;
+  padding: 5%;
 }
 footer {
   text-align: center;
