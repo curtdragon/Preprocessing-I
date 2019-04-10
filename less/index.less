@@ -207,17 +207,16 @@ h2 {
 .main_content {
   display: flex;
   flex-wrap: wrap;
-  /* width: 100%; */
-}
-.left_pane {
-  height: 600px;
+  height: 900px;
   font-size: 14px;
+}
+.main_content .left_pane {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 25%;
-  padding: 2%;
-  border-right: solid #BAAC93 3px;
+  width: 24%;
+  border-right: solid #BAAC93 4px;
+  margin: 2%;
 }
 .main_content .left_pane .contact .icons {
   display: flex;
@@ -230,15 +229,12 @@ h2 {
   color:#BAAC93;
   text-decoration: none;
 }
-
-.right_pane {
-  height: 600px;
-  font-size: 14px;
-  justify-content: space-around;
+.main_content .right_pane {
   display: flex;
   flex-direction: column;
-  width: 75%;
-  padding: 5%;
+  justify-content: space-around;
+  width: 68%;
+  margin: 2%;
 }
 footer {
   text-align: center;
