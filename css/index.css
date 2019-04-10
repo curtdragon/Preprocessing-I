@@ -152,6 +152,7 @@ h1 {
 h2 {
   font-size: 24px;
   font-weight: 900;
+  padding-bottom: 3%;
 }
 .navigation_header {
   justify-content: space-around;
@@ -204,19 +205,26 @@ h2 {
   color: white;
   width: 85%;
 }
+.about h2 {
+  padding-bottom: 0;
+}
 .main_content {
   display: flex;
   flex-wrap: wrap;
   height: 900px;
   font-size: 14px;
 }
+.main_content li {
+  list-style-type: square;
+  list-style-position: inside;
+}
 .main_content .left_pane {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 24%;
+  width: 28%;
   border-right: solid #BAAC93 4px;
-  margin: 2%;
+  padding: 2%;
 }
 .main_content .left_pane .contact .icons {
   display: flex;
@@ -224,6 +232,10 @@ h2 {
 .main_content .left_pane .contact .icons a {
   color: #6B6A7E;
   text-decoration: none;
+}
+.main_content .left_pane .contact li {
+  list-style-type: none;
+  list-style-position: inside;
 }
 .main_content .left_pane .contact .icons a:hover {
   color: #BAAC93;
@@ -234,7 +246,7 @@ h2 {
   flex-direction: column;
   justify-content: space-around;
   width: 68%;
-  margin: 2%;
+  padding: 2%;
 }
 footer {
   text-align: center;
