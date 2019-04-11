@@ -145,14 +145,19 @@ header {
   align-items: center;
   background: #6B6A7E;
 }
-h1 {
+.container h1 {
   font-size: 48px;
   font-weight: 900;
 }
-h2 {
+.container h2 {
   font-size: 24px;
   font-weight: 900;
   padding-bottom: 3%;
+}
+.container h3 {
+  font-size: 16px;
+  font-weight: 700;
+  padding-bottom: 1%;
 }
 .navigation_header {
   justify-content: space-around;
@@ -169,7 +174,7 @@ h2 {
   text-decoration: none;
 }
 .navigation_header nav a:hover {
-  color: #BAAC93;
+  color: #FF5500;
 }
 .navigation_header nav a:first-child {
   margin-left: 20;
@@ -186,13 +191,13 @@ h2 {
   width: 31%;
   flex-direction: column;
   text-align: center;
-  background-color: #BAAC93;
+  background-color: #FF5500;
   margin-left: 21%;
   padding: 10px 0 10px 0;
 }
 .about {
   height: 110px;
-  background-color: #BAAC93;
+  background-color: #FF5500;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -205,26 +210,28 @@ h2 {
   color: white;
   width: 85%;
 }
-.about h2{
+.about h2 {
   padding-bottom: 0;
 }
 .main_content {
   display: flex;
   flex-wrap: wrap;
-  height: 900px;
+  // height: 900px;
   font-size: 14px;
 }
 .main_content li {
   list-style-type: square;
   list-style-position: inside;
+  padding-bottom: 1%;
 }
 .main_content .left_pane {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 28%;
-  border-right: solid #BAAC93 4px;
   padding: 2%;
+  margin-top: 1%;
+    height: 98%;
 }
 .main_content .left_pane .contact .icons {
   display: flex;
@@ -235,7 +242,6 @@ h2 {
 }
 .main_content .left_pane .contact li {
   list-style-type: none;
-  list-style-position: inside;
 }
 .main_content .left_pane .contact .icons a:hover {
   color:#BAAC93;
@@ -247,10 +253,28 @@ h2 {
   justify-content: space-around;
   width: 68%;
   padding: 2%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  border-left: solid  #6B6A7E 4px;
+  height: 98%;
+}
+.main_content .right_pane .education {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.main_content .right_pane .edu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 1%;
+}
+.main_content .right_pane .edu div:firstchild {
+  align-self: flex-start;
 }
 footer {
   text-align: center;
   height: 75px;
-  background: #6B6A7E;
+  background: #FF5500;
   padding: 37px 0 37px 0;
 }
