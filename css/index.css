@@ -157,7 +157,7 @@ header {
 .container h3 {
   font-size: 16px;
   font-weight: 700;
-  padding-bottom: 1%;
+  padding-bottom: 2%;
 }
 .navigation_header {
   justify-content: space-around;
@@ -216,6 +216,7 @@ header {
 .main_content {
   display: flex;
   flex-wrap: wrap;
+  height: 1100px;
   font-size: 14px;
 }
 .main_content li {
@@ -226,7 +227,7 @@ header {
 .main_content .left_pane {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   width: 28%;
   padding: 2%;
   margin-top: 1%;
@@ -246,6 +247,12 @@ header {
   color: #BAAC93;
   text-decoration: none;
 }
+.main_content .left_pane .edu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 1%;
+}
 .main_content .right_pane {
   display: flex;
   flex-direction: column;
@@ -256,20 +263,6 @@ header {
   margin-bottom: 1%;
   border-left: solid #6B6A7E 4px;
   height: 98%;
-}
-.main_content .right_pane .education {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
-.main_content .right_pane .edu {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin: 1%;
-}
-.main_content .right_pane .edu div:firstchild {
-  align-self: flex-start;
 }
 footer {
   text-align: center;
