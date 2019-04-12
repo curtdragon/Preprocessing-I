@@ -140,11 +140,6 @@ body {
   width: 1000px;
   margin: 0 auto;
 }
-header {
-  display: flex;
-  align-items: center;
-  background: #6B6A7E;
-}
 .container h1 {
   font-size: 48px;
   font-weight: 900;
@@ -158,6 +153,11 @@ header {
   font-size: 16px;
   font-weight: 700;
   padding-bottom: 2%;
+}
+header {
+  display: flex;
+  align-items: center;
+  background: #777777;
 }
 .navigation_header {
   justify-content: space-around;
@@ -237,15 +237,15 @@ header {
   display: flex;
 }
 .main_content .left_pane .contact .icons a {
-  color: #6B6A7E;
+  color: #777777;
   text-decoration: none;
-}
-.main_content .left_pane .contact li {
-  list-style-type: none;
 }
 .main_content .left_pane .contact .icons a:hover {
   color: #BAAC93;
   text-decoration: none;
+}
+.main_content .left_pane .contact li {
+  list-style-type: none;
 }
 .main_content .left_pane .edu {
   display: flex;
@@ -261,7 +261,7 @@ header {
   padding: 2%;
   margin-top: 1%;
   margin-bottom: 1%;
-  border-left: solid #6B6A7E 4px;
+  border-left: solid #777777 4px;
   height: 98%;
 }
 footer {
