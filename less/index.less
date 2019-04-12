@@ -133,16 +133,39 @@ table {
 html,
 body {
   height: 100%;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: @fontfamily;
+
+  @media (max-width: 500px) {
+    font-family: 'Nanum Brush Script', cursive;
+  }
 }
 /*Start CSS*/
 
+//Mixins
+.pane_class {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 2%;
+  margin-top: 1%;
+  height: 98%;
+}
+
+//Variables
+@fontfamily: 'Nunito Sans', sans-serif;
+
+
+
+//Container
 .container {
   width: 1000px;
   margin: 0 auto;
   h1 {
-  font-size: 48px;
-  font-weight: 900;
+    @media (max-width:500px) {
+      font-size: 36px;
+    }
+    font-size: 48px;
+    font-weight: 900;
   }
   h2 {
     font-size: 24px;
@@ -154,13 +177,20 @@ body {
     font-weight: 700;
     padding-bottom: 2%;
   }
+  @media (max-width: 500px) {
+    width: 80%;
+    margin: 0 auto;
+  }
+
 }
 
+//Header
 header {
   display: flex;
   align-items: center;
   background: #777777;
 }
+  
 
 .navigation_header {
   justify-content: space-around;
@@ -201,6 +231,9 @@ header {
 }
 
 .about {
+  @media (max-width: 500px){
+    display: block;
+    }
   height: 110px;
   background-color: #FF5500;
   display: flex;
@@ -219,7 +252,13 @@ header {
   }
 }
 
+//Main content
 .main_content {
+  @media (max-width: 500px) {
+    display: block;
+    height: 100%;
+    text-align: center;
+  }
   display: flex;
   flex-wrap: wrap;
   height: 1100px;
@@ -230,16 +269,19 @@ header {
     padding-bottom: 1%;
   }
   .left_pane {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    @media (max-width: 500px) {
+      width: 100%;
+    }
+    .pane_class;
     width: 28%;
-    padding: 2%;
-    margin-top: 1%;
-    height: 98%;
+
     .contact .icons {
+      @media (max-width: 500px) {
+        justify-content: center;
+      }
       display: flex;
       a {
+        
         color:#777777;
         text-decoration: none;
       }
@@ -259,18 +301,21 @@ header {
     }
   } 
   .right_pane {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    @media (max-width: 500px) {
+      width: 100%;
+    }
+    .pane_class;
     width: 68%;
-    padding: 2%;
-    margin-top: 1%;
     margin-bottom: 1%;
     border-left: solid  #777777 4px;
-    height: 98%;
+
+    @media (max-width: 500px) {
+      border-left: none;
+    }
   }
 }
 
+//Footer
 footer {
   text-align: center;
   height: 75px;
