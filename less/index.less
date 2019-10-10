@@ -189,12 +189,15 @@ header {
   display: flex;
   align-items: center;
   background: #777777;
-}
-  
+  margin: 0 1% 0 1%;
+}  
 
 .navigation_header {
   justify-content: space-around;
   height: 75px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px; 
+  margin-top: 2%;
   nav {
     width: 100%;
     display: flex;
@@ -219,14 +222,16 @@ header {
   img {
     width: 20%;
     margin-left: 4%;
+    border-radius: 5px;
   }
-  div {
+  .name {
     width: 31%;
     flex-direction: column;
     text-align: center;
     background-color: #FF5500;
     margin-left: 21%;
     padding: 10px 0 10px 0;
+    border-radius: 5px;
   }
 }
 
@@ -242,6 +247,10 @@ header {
   margin: auto;
   padding: 2%;
   text-align: justify;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin: 0 1% 0 1%;
+
   p {
     font-size: 14px;
     color: white;
@@ -321,4 +330,6 @@ footer {
   height: 75px;
   background: #FF5500;
   padding: 37px 0 37px 0;
+  margin: 2%;
+  border-radius: 5px;
 }
